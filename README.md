@@ -36,7 +36,7 @@ The following challenges were encountered during development:
 
 * [ ] Figuring out what settings to enable.
 * [ ] Control-dragging in layers into a restricted space which wasted a lot of time.
-* [ ] Users have to tap bill amount to start typing
+* [ ] Users have to tap bill amount to start typing.
 
 ## License
 
