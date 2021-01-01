@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D220EE124402194003CCFD3 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220EE024402194003CCFD3 /* ColorTheme.swift */; };
+		4D98F7A3259542620056B8EF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98F7A2259542620056B8EF /* SettingsViewController.swift */; };
 		CA2FDE601FCC23F200EC5E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2FDE5F1FCC23F200EC5E40 /* Main.storyboard */; };
 		CA4363DE1F710F1D00BDEE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4363DD1F710F1D00BDEE8A /* AppDelegate.swift */; };
 		CA4363E01F710F1D00BDEE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4363DF1F710F1D00BDEE8A /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4D220EE024402194003CCFD3 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		4D98F7A2259542620056B8EF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CA2FDE5F1FCC23F200EC5E40 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CA4363DA1F710F1D00BDEE8A /* TipCalculatorStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculatorStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4363DD1F710F1D00BDEE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				CA4363DD1F710F1D00BDEE8A /* AppDelegate.swift */,
 				CA4363DF1F710F1D00BDEE8A /* ViewController.swift */,
+				4D98F7A2259542620056B8EF /* SettingsViewController.swift */,
 				4D220EE024402194003CCFD3 /* ColorTheme.swift */,
 				CA2FDE5F1FCC23F200EC5E40 /* Main.storyboard */,
 				CA4363E41F710F1D00BDEE8A /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				CA4363E01F710F1D00BDEE8A /* ViewController.swift in Sources */,
 				CA4363DE1F710F1D00BDEE8A /* AppDelegate.swift in Sources */,
 				CA4363F31F71159100BDEE8A /* UIColor+TC.swift in Sources */,
+				4D98F7A3259542620056B8EF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

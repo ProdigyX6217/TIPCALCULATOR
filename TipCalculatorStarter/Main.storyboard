@@ -58,29 +58,24 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-22-mvW">
                                                 <rect key="frame" x="0.0" y="68.5" width="320" height="9"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="FSR-xH-huR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="9"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-X9-tKk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="9"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <color key="textColor" name="tcWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-jE-6gS">
-                                                                <rect key="frame" x="177" y="0.0" width="143" height="10"/>
-                                                                <segments>
-                                                                    <segment title="15%"/>
-                                                                    <segment title="18%"/>
-                                                                    <segment title="20%"/>
-                                                                </segments>
-                                                                <color key="selectedSegmentTintColor" name="tcHotPink"/>
-                                                                <connections>
-                                                                    <action selector="tipPercentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OQL-V2-Leo"/>
-                                                                </connections>
-                                                            </segmentedControl>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-X9-tKk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="9"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" name="tcWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-jE-6gS">
+                                                        <rect key="frame" x="177" y="0.0" width="143" height="10"/>
+                                                        <segments>
+                                                            <segment title="15%"/>
+                                                            <segment title="18%"/>
+                                                            <segment title="20%"/>
+                                                        </segments>
+                                                        <color key="selectedSegmentTintColor" name="tcHotPink"/>
+                                                        <connections>
+                                                            <action selector="tipPercentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OQL-V2-Leo"/>
+                                                        </connections>
+                                                    </segmentedControl>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -230,18 +225,49 @@
         <!--Settings View Controller-->
         <scene sceneID="xo1-wx-LuZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qYT-fv-MoV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="PtX-K4-fSz" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="PtX-K4-fSz" customClass="SettingsViewController" customModule="TipCalculatorStarter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C6d-oX-dEv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdA-gi-cwc" userLabel="Settings Card View">
+                                <rect key="frame" x="15" y="68" width="345" height="575"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ecd-G2-T1N" userLabel="Currency Text Field" customClass="CurrencyTextField">
+                                        <rect key="frame" x="38" y="187" width="269" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="dnT-Yr-BpO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstItem="Ecd-G2-T1N" firstAttribute="leading" secondItem="BdA-gi-cwc" secondAttribute="leadingMargin" constant="30" id="8lj-dI-izP"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Ecd-G2-T1N" secondAttribute="bottom" constant="346" id="F4n-W4-YZS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ecd-G2-T1N" secondAttribute="trailing" constant="30" id="uPp-oh-250"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vmg-m2-f6C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BdA-gi-cwc" firstAttribute="leading" secondItem="vmg-m2-f6C" secondAttribute="leading" constant="15" id="20e-fP-1cp"/>
+                            <constraint firstItem="vmg-m2-f6C" firstAttribute="trailing" secondItem="BdA-gi-cwc" secondAttribute="trailing" constant="15" id="8fa-Wd-crE"/>
+                            <constraint firstItem="vmg-m2-f6C" firstAttribute="bottom" secondItem="BdA-gi-cwc" secondAttribute="bottom" constant="24" id="IDl-BA-WMG"/>
+                            <constraint firstItem="BdA-gi-cwc" firstAttribute="top" secondItem="vmg-m2-f6C" secondAttribute="top" constant="24" id="cwR-LE-car"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TAf-ls-3Xa"/>
+                    <connections>
+                        <outlet property="currencyTextField" destination="Ecd-G2-T1N" id="NVr-DV-eBY"/>
+                        <outlet property="settingsCardView" destination="BdA-gi-cwc" id="3aq-nb-sgr"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYT-fv-MoV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="37"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="36.431784107946029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Hb-W2-JIZ">

@@ -2,8 +2,8 @@
 //  UIColor+TC.swift
 //  TipCalculatorStarter
 //
-//  Created by Chase Wang on 9/19/17.
-//  Copyright © 2017 Make School. All rights reserved.
+//  Created by Student Laptop_7/19_1 on 12/24/20.
+//  Copyright © 2020 Make School. All rights reserved.
 //
 
 import UIKit.UIColor
